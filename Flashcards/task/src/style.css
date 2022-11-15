@@ -1,0 +1,124 @@
+body{
+
+	background-image : url("space.png");
+	background-color: gray;
+	color:white;
+	text-align:center;
+
+	margin-top: 50px;
+
+	vertical-align: baseline;
+
+	font-family: Arial, Helvetica, fantasy;
+
+
+}
+
+.kwiz_area{
+
+	height: 400px;
+	margin: auto;
+	width: 400px;
+	border: 3px solid #73AD21;
+	border-radius: 25px;
+	padding: 10px;
+
+	background-color: gray;
+	opacity: 0.7;
+
+	z-index: 3;
+
+
+	text-align:center;
+
+}
+
+.pole_kart{
+
+
+	display: grid;
+	grid-template-columns: 100px 100px 100px;
+	grid-gap: 10px;
+	justify-content: center;
+}
+
+h1{
+
+	color: white;
+
+	z-index: 2;
+}
+
+.karta{
+
+	height:100px;
+
+	color : black;
+	text-align:center;
+	z-index: 2;
+	opacity: 1;
+
+	border-radius: 25px;
+	font-family: Arial, Helvetica, sans-serif;
+
+	perspective: 1000px;
+
+}
+
+.karta-zawartosc{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	transition: transform 0.8s;
+	transform-style: preserve-3d;
+
+}
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.karta:hover .karta-zawartosc {
+	transform: rotateY(180deg);
+}
+
+
+/* Position the front and back side */
+.karta-przod, .karta-tyl {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	-webkit-backface-visibility: hidden; /* Safari */
+	backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.karta-przod {
+
+	color: black;
+	background-color:white;
+	border-radius: 25px;
+
+
+}
+
+/* Style the back side */
+.karta-tyl {
+	background-color: dodgerblue;
+	color: white;
+	transform: rotateY(180deg);
+
+	border-radius: 25px;
+	justify-content: center;
+
+
+}
+
+
+.cos{
+<!--
+
+display: flex;
+flex-wrap: wrap;
+justify-content: space-around;
+
+-->
+
+}
